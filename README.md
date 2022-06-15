@@ -2,6 +2,16 @@
 
 ![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
 
+## TODO
+- Make chart responsive
+- make total amount and spending title dynamic
+- Finish README
+- Fix desktop and tablet designs
+- Fix hover colors for bars
+- fix tooltip info display to just $ amount
+- Adjust sizing of fonts for "total this month" section
+- See if I can put chart js options into less file
+
 ## The challenge
 
 Your challenge is to build out this bar chart component and get it looking as close to the design as possible.
