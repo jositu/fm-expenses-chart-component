@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+  <!-- CSS file using Less preprocessor -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Chart.js -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jQuery -->
+
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  My balance
-  $921.48
+  <main>
+    <!-- includes main content (not attribution) -->
 
-  Spending - Last 7 days
+    <div id="sect-balance" class="section">
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+      <span>My balance</span>
+      <span id="my-balance">$921.48</span>
 
-  Total this month
-  $478.33
+      <img class="img-logo" src="./images/logo.svg">
 
-  +2.4%
-  from last month
-  
+    </div>
+
+    <div id="sect-overview" class="section">
+
+      <div>
+        <h1>Spending - Last 7 days</h1>
+      </div>
+
+      <div>
+        <!-- chart displaying spending -->
+        <!-- data.json ids: day and amount -->
+        <canvas id="spending-chart"></canvas>
+      </div>
+
+      <div>
+        <hr>
+      </div>
+
+      <div id="summary">
+
+        <span id="sum-title">Total this month</span>
+        <span id="sum-total">$478.33</span>
+
+        <span id="sum-percent">+2.4%</span>
+        <span id="sum-caption">from last month</span>
+      
+      </div>
+
+    </div>
+
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Josephine Situ</a>.
   </div>
+
+  <script src="scripts.js"></script>
+
 </body>
+
 </html>
